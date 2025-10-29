@@ -27,3 +27,5 @@ River or Stream Name and some other not so important details.
 Here is a link to the dataset from NID that I have put in my Google Drive for easy access (in CSV format): [link](https://drive.google.com/file/d/1SSTUEoitEWkfp5d7WKd57qBjCSg3i13Y/view?usp=sharing)
 
 Here is a link to the source: [link](https://nid.sec.usace.army.mil/nid/#/dams/search/sy=@purposeIds:(6)&viewType=map&resultsType=dams&advanced=false&hideList=false&eventSystem=false)
+
+I have added a new python script based on Cory's script for extracting data from USGS. I have made it such that it can extract data from 30 years ago till now (though for the test lat and long some of these doesn't seem to be available). The code can also extract multiple input features at the same time, it looks for the closest station that measures the parameter with a limit of 100 km and then extract the mean and if that is not available the instantaneous value for the parameter. It also combines all of these to one table.
