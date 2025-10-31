@@ -11,5 +11,5 @@ https://www.ncei.noaa.gov/data/nclimdiv-monthly/doc/
 
 https://drive.google.com/drive/folders/1mHP8r-NDPPdPGQVvQY9UOaipOxgb8W4p?usp=drive_link <- Climate Data 
 
-List of Dams with Lat,Long,Name,Eletrical Output
-https://drive.google.com/file/d/1B-0dTWhbjZ9ZUPNXJszEF3YsxZSEHvgC/view?usp=drive_link
+Training Data With its corresponding README in this drive_link
+https://drive.google.com/drive/u/0/folders/1GrFnWwH0siqGYnWsBGUzCBdoWk0lqibO
