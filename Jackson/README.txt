@@ -12,4 +12,4 @@ https://www.ncei.noaa.gov/data/nclimdiv-monthly/doc/
 https://drive.google.com/drive/folders/1mHP8r-NDPPdPGQVvQY9UOaipOxgb8W4p?usp=drive_link <- Climate Data 
 
 Training Data With its corresponding README in this drive_link
-https://drive.google.com/drive/u/0/folders/1GrFnWwH0siqGYnWsBGUzCBdoWk0lqibO
+https://drive.google.com/file/d/1MHoKz6S3C3ndve3WzbIAs1k5vBPXQjUP/view?usp=sharing
