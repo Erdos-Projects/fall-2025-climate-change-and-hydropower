@@ -1,0 +1,11 @@
+Summarizing my files:
+Ran some exploratory data analysis on Train_val_2001_2021 from Jefferey
+- Data integrity checks (shape, dtypes, missingness)
+- Target distribution + log distribution
+- Group comparisons (mode, regions)
+- Seasonality (month), interannual trend (year)
+- Spatial quicklook (lon/lat colored by MWh)
+- Correlation heatmap (numeric)
+- Static-feature vs target log–log relationships
+- Climate-feature vs target relationships (sampled)
+- Spearman correlations ranked by association with target
