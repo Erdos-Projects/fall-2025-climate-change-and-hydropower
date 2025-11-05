@@ -17,7 +17,7 @@ Latitude - Coordinate
 
 Longitude - Coordinate
 
-nerc_region -  Four letter code for the NERC region of the facility
+nerc_region -  Four letter code for the NERC region of the facility, entity that governs the maintenance and standardization of the dams.
 
 Primary Purpose - What the dam is used for primarily
 
@@ -49,7 +49,12 @@ tavg - Average temperature this month (deg. F. to 10ths)
 
 pcpn - Precipitation this month (inches to 100ths)
 
-The Feature definitions are as per [link](https://floridadep.gov/sites/default/files/Dam%20Parameter%20Definitions.pdf)
-The Dams dataset is from the National Inventory of Dams (NID) [link](https://nid.sec.usace.army.mil/nid/#/)
-The weather dataset is from the National Centers for Environmental Information (NCEI) https://www.ncei.noaa.gov/pub/data/cirs/climdiv/
- 
+(1) The Feature definitions are as per [link](https://floridadep.gov/sites/default/files/Dam%20Parameter%20Definitions.pdf)
+
+(2) The Dams dataset is from the National Inventory of Dams (NID) [link](https://nid.sec.usace.army.mil/nid/#/)
+
+(3) The weather/climate dataset is from the National Centers for Environmental Information (NCEI) https://www.ncei.noaa.gov/pub/data/cirs/climdiv/
+
+(4) Metadata for EIA_ID not found in NID (Latitude, Longitude, nerc_region, mode)  dams/hydroplants https://zenodo.org/records/13776945 (godeeep_hydro_plants.csv)
+
+(5) MWh feature target from Oak Ridge National Laboratory and Pacific Northwest National Laboratory https://zenodo.org/records/11584567
