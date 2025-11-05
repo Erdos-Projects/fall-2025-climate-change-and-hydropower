@@ -9,7 +9,7 @@ year - Year of row
 
 month - Month of row
 
-RectifHyd_MWh - Our Target, the Mwh (Megawatt hour) the dam produced. RectifHyd is our source for this data.
+RectifHyd_MWh - Our Target, the MWh (Megawatt hour) the dam produced. RectifHyd is our source for this data.
 
 mode - Either "Storage" or "RoR" indicating if the plant is primarily operated as a storage or ron-of-river facility
 
@@ -47,9 +47,9 @@ tmax - Maximum temperature this month (deg. F. to 10ths)
 
 tavg - Average temperature this month (deg. F. to 10ths)
 
-pcpn - Percipitation this month (inches to 100ths)
+pcpn - Precipitation this month (inches to 100ths)
 
 The Feature definitions are as per [link](https://floridadep.gov/sites/default/files/Dam%20Parameter%20Definitions.pdf)
-The Dams dataset is from National Inventory of Dams (NID) [link](https://nid.sec.usace.army.mil/nid/#/)
-The weather dataset is from ...
+The Dams dataset is from the National Inventory of Dams (NID) [link](https://nid.sec.usace.army.mil/nid/#/)
+The weather dataset is from the National Centers for Environmental Information (NCEI) https://www.ncei.noaa.gov/pub/data/cirs/climdiv/
  
