@@ -5,13 +5,13 @@ Team members: [Daniela Beckelhymer](https://github.com/dbeck7296), [Jeffrey Jack
 
 ## Table of contents
 
-1. [Introduction](## Introduction)
-2. [Dataset](## Dataset)
-3. [Input features](## Input features)
-4. [Methods and Model](## Methods and Model)
-5. [KPI and Results](## KPI & Results)
-6. [Future Directions](## Future Directions)
-7. [Sources](## Sources)
+1. [Introduction](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#introduction)
+2. [Dataset](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#dataset)
+3. [Input features](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#input-features)
+4. [Methods and Model](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#methods-and-model)
+5. [KPI and Results](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#kpi--results)
+6. [Future Directions](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#future-directions)
+7. [Sources](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/README.md#sources)
 
 
 ## Introduction
