@@ -5,8 +5,13 @@ Team members: [Daniela Beckelhymer](https://github.com/dbeck7296), [Jeffrey Jack
 
 ## Table of contents
 
-1. Introduction
-2. 
+1. [Introduction](## Introduction)
+2. [Dataset](## Dataset)
+3. [Input features](## Input features)
+4. [Methods and Model](## Methods and Model)
+5. [KPI and Results](## KPI & Results)
+6. [Future Directions](## Future Directions)
+7. [Sources](## Sources)
 
 
 ## Introduction
@@ -48,18 +53,6 @@ Input features included in the dataset and the sources are listed here.
 21. tavg - Average temperature this month (deg. F. to 10ths)
 22. pcpn - Precipitation this month (inches to 100ths)
 
-## Sources
-
-(1) The Feature definitions are as per [link](https://floridadep.gov/sites/default/files/Dam%20Parameter%20Definitions.pdf)
-
-(2) The Dams dataset is from the National Inventory of Dams (NID) [link](https://nid.sec.usace.army.mil/nid/#/)
-
-(3) The weather/climate dataset is from the National Centers for Environmental Information (NCEI) https://www.ncei.noaa.gov/pub/data/cirs/climdiv/
-
-(4) Metadata for EIA_ID not found in NID (Latitude, Longitude, nerc_region, mode)  dams/hydroplants https://zenodo.org/records/13776945 (godeeep_hydro_plants.csv)
-
-(5) MWh feature target from Oak Ridge National Laboratory and Pacific Northwest National Laboratory https://zenodo.org/records/11584567
-
 ## Methods and Model
 The main problem in linking this data to the hydropower data was the fact that it turns out that every dam in the US has 2 different ID numbers, a federal ID and an Energy Information Agency ID (EIA_ID). NID used the federal ID and contained latitude and longitude coordinates, while GODEEEP contained EIA_IDs while also having coordinates. We used nearest neighbors to match each federal ID coordinate to its corresponding EIA_ID. Since the hydropower data was matching dams to their EIA_ID, we now have the metadata corresponding to their federal ID. From here, we need to assign what climate division each dam resides in. Utilizing the coordinates of the dam, we map them onto the climate divisions of the NCEI and attach the value onto the dam. Of course, we also append the corresponding climate information per month and year. The NCEI would have the occasional missing value in its database. We accounted for this by taking the average value of the category (for instance, max temperature) over the given month and climate division.  
 
@@ -68,7 +61,7 @@ Neural Network - We employed a fully connected feedforward network with one hidd
 Decision Tree - We also trained a LightGBM decision tree model on our data. This model identified climate division, geographic location, dam area and dam height as the most important predictors for hydropower output.
 
 On the withheld data, our two models performed as follows:
-
+![alt text](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/results/final/test_predictions_comparison.png)
 
 ## KPI & Results
 We evaluate model performance and practical usefulness through
@@ -81,7 +74,7 @@ Our neural network achieved an R^2 value of 0.773, whereas the LightGBM model ha
 
 The most important features to LightGBM are all geographically and physically based, rather than climate related.
 
-
+![alt text](https://github.com/Erdos-Projects/fall-2025-climate-change-and-hydropower/blob/main/results/final/lightgbm_feature_importance.png)
 
 ## Future Directions
 To make our results more usable for stakeholders, it would be convenient to make an applet where a user selects a dam and inputs a monthly weather forecast and gets back a hydropower prediction.
@@ -89,7 +82,7 @@ One limitation of our model is that it did not take into account the characteris
 Our model currently considers a limited amount of climate data - only temperature and precipitation. Other factors such as snowfall or wind speed could potentially impact the power output of a dam.
 
 
-
+## Sources
 
 (1) The Feature definitions are as per [link](https://floridadep.gov/sites/default/files/Dam%20Parameter%20Definitions.pdf)
 
